@@ -14,12 +14,12 @@ jobs:
       uses: actions/setup-java@v4
       with:
         java-version: '17'
-        distribution: 'temurin'
+        distribution: 'temurin' #Open-source and free  Eclipse Temurin is available under an open-source license
         cache: maven
     - name: Build with Maven
       run: mvn compile
       
-  security-check:
+  security-check:   # Security check using trivy 
     runs-on: ubuntu-latest
     needs: compile
 
