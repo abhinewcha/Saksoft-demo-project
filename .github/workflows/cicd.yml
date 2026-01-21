@@ -42,7 +42,7 @@ jobs:
     - name: Gitleaks Code Scan
       run: gitleaks detect source. -r gitleaks-report.json -f json
 
-  test:    # This is the test case section
+  test:    # This is the unit test case section
     runs-on: self-hosted
 
     steps:
