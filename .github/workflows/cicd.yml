@@ -124,7 +124,9 @@ jobs:
       uses: docker/build-push-action@v6
       with:
         push: true
-        tags: abhinewcha/Saksoft-demo-project.git # We have to add our username and repo name      
+        tags: |
+            abhinewcha/Saksoft-demo-project:latest
+            abhinewcha/Saksoft-demo-project:${{ github.sha }} # We have to add our username and repo name      
 
     
 
